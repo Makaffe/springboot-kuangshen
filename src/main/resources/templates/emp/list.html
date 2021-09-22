@@ -72,7 +72,7 @@
 									<td th:text="${emp.getEmail()}"></td>
 									<td th:text="${emp.getGender()==0?'女':'男'}"></td>
 									<td th:text="${emp.getDepartment().getDepartmentName()}"></td>
-									<td th:text="${#dates.format(emp.getBirth(),'yyyy-MM-dd HH:mm:ss')}"></td>
+									<td th:text="${#dates.format(emp.getBirth(),'yyyy-MM-dd')}"></td>
 									<td>
 										<button class="btn btn-sm btn-primary">编辑</button>
 										<button class="btn btn-sm btn-danger">删除</button>
